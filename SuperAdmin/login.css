@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(145deg, #101820, #212121);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-box {
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2), inset 0px -3px 20px #000;
+  width: 350px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #0ab3ff;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.input-container label {
+  color: #0ab3ff;
+  margin-right: 10px;
+}
+
+.input-container input {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.input-container input::placeholder {
+  color: #888;
+}
+
+.login-btn {
+  background: linear-gradient(145deg, #0ab3ff, #0068b4);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(145deg, #0068b4, #0ab3ff);
+  transform: scale(1.05);
+}
+
+.login-btn:active {
+  background-color: #005492;
+  transform: scale(1.02);
+}
+
+@media (max-width: 400px) {
+  .login-box {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.error {
+  margin: 10px 0;
+  padding: 15px; /* Add padding for better readability */
+  border: 1px solid #ff4d4d; /* Softer red border */
+  background-color: #ff5c5c; /* Slightly darker red background */
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold; /* Make the text bold for emphasis */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 10px rgba(255, 92, 92, 0.4); /* Add a subtle shadow for depth */
+  animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Optional hover effect (for aesthetic purposes) */
+.error:hover {
+  background-color: #ff4d4d; /* Change background slightly on hover */
+  border-color: #ff3333; /* Darken the border on hover */
+  cursor: pointer; /* Optional if you want it to be dismissible */
+}

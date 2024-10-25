@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .SuperAdmin {
+            background-color: #3498db; /* Button color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 15px; /* Padding */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer on hover */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+            display: flex; /* Flexbox for alignment */
+            align-items: center; /* Center icon vertically */
+            justify-content: center; /* Center icon horizontally */
+            position: relative; /* Position relative for hover effect */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .SuperAdmin:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarge the button */
+        }
+
+        .SuperAdmin i {
+            margin-right: 8px; /* Space between icon and text */
+            font-size: 20px; /* Icon size */
+        }
+
+        .SuperAdmin:focus {
+            outline: none; /* Remove outline on focus */
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Home Page</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="container nav_container">
+            <a href="#"><h4>BOOK QR Navigator</h4></a>
+            <ul class="nav_menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Course">Courses</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </nav>
+  
+     
+     <header>
+        <div class="container header_container">
+            <div class="header_left" id="Home">
+                <h1>BOOK QR LIBRARY NAVIGATOR</h1>
+                <P></P>
+                <p>IN THIS WEBSITE YOU CAN SCAN THE QRCODE OF THE BOOKS AND  STORE YOUR ISSUE OR RETURN DETAILS OF THE BOOKS IN YOUR STUDENT PORTAL</p>
+                <a href="StudentLogin/index.php" class="btn btn-primary">Login for Student with Erp id</a>
+                <a href="LibrarianLogin/index.php" class="btn btn-primary">Login for Librarian</a>
+            </div>
+
+
+            <div class="header_right">
+                <div class="header_right-img">
+                    <img src="image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+     </header>
+ 
+
+     <section class="categories" id="About">
+        <div class="container categories_container">
+            <div class="categories_left" >
+                <h1>Features</h1>
+                <p>  Features of the this website  </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <div class="categories_right">
+                
+                <article class="category">
+                    <span class="category_icon"><i class="fa-sharp fa-solid fa-qrcode"></i></span>
+                    <h5>QR Scanning Feature</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, libero!</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-regular fa-user"></i></span>
+                    <h5>Stuent Profile</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, libero!</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-book-open-reader"></i></span>
+                    <h5>Approval of the librarian</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, libero!</p>
+                </article>
+
+
+            </div>
+        </div>
+     </section>
+
+ 
+
+     <section class="courses" id="Course">
+        <h2>Books of the courses</h2>
+
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image">
+                    <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>MCA</h4>
+                    <p>We Have all the Books for MCA all semester, you can choose which ever you want</p>
+                    <a href="" class="btn btn-primary">Learn More</a> 
+                </div>
+            </article>
+            
+            <article class="course">
+                <div class="course__image">
+                    <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>BCA</h4>
+                    <p>We have all the Books for BCA all semester as well as all the Flavours of BCA</p>
+                    <a href="" class="btn btn-primary">Learn More</a> 
+                </div>
+            </article>
+            
+            <article class="course">
+                <div class="course__image">
+                    <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>B. Tech</h4>
+                    <p>We Currently only have the B. Tech CSE Books in Stock we will try to Find more Branches for B.Tech</p>
+                    <a href="" class="btn btn-primary">Comming Soon</a> 
+                </div>
+            </article>
+            
+        </div>
+
+     </section>
+
+
+     <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question__answer">
+                    <h4>When Will The Latest Addition of the Book will launch?</h4>
+                    <p>We refill the Books on every Friday, so be patient and check for the Books on Monday's.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question__answer">
+                    <h4>How can i Write my Book Suggestions?</h4>
+                    <p>You Can either write your request in our Suggestion Box or if its any urgent then give your contact details in our concelt Form</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question__answer">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, vitae, provident explicabo voluptates voluptas assumenda maxime ipsa, animi nulla exercitationem praesentium perspiciatis mollitia. Mollitia modi adipisci, itaque dicta numquam eaque.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question__answer">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, vitae, provident explicabo voluptates voluptas assumenda maxime ipsa, animi nulla exercitationem praesentium perspiciatis mollitia. Mollitia modi adipisci, itaque dicta numquam eaque.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question__answer">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, vitae, provident explicabo voluptates voluptas assumenda maxime ipsa, animi nulla exercitationem praesentium perspiciatis mollitia. Mollitia modi adipisci, itaque dicta numquam eaque.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="question__answer">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, vitae, provident explicabo voluptates voluptas assumenda maxime ipsa, animi nulla exercitationem praesentium perspiciatis mollitia. Mollitia modi adipisci, itaque dicta numquam eaque.</p> 
+                </div>
+            </article>
+              
+
+        </div>
+     </section>
+
+    
+
+     <section class="container testimonials__container mySwiper">
+        <h2>Students testonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFuJTIwYW5kJTIwd29tYW58ZW58MHx8MHx8fDA%3D" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Tanvi Singh</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Ma'am This Online LMS with QR Scanner is the best website and most flexible also.</p>
+                </div>
+            </article>
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fG1hbiUyMGFuZCUyMHdvbWFufGVufDB8fDB8fHww" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Shruti Agrawal</h5>
+                    <small>Librarian</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Yes Dear, all The credit Goes to <strong> Mr. Rahul Saxena</strong> for Creating best side for us.</p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+     </section>
+
+
+
+     <footer class="footer" id="Contact">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4></h4>
+                </a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, enim.
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalink">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact us</h4>
+                <div>
+                    
+                    <p>24MCI10204@cuchd.in</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <button class="SuperAdmin" onclick="window.location.href='../SuperAdmin/login.php'">
+            <i class="fa-solid fa-bolt"></i> Super Admin
+        </button>
+     </footer>
+
+    
+     
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+     <script>
+        var swiper = new Swiper(".mySwiper",{
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            //when Window is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+     </script>
+</body>
+</html>

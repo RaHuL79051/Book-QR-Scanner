@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Generate QR Code</h1>
+        <p>Paste a URL or enter text to create QR code</p>
+      </header>
+      <div class="form">
+        <input
+          type="text"
+          spellcheck="false"
+          placeholder="Enter Name"
+          id="Name"
+        />
+        <input
+          type="text"
+          spellcheck="false"
+          placeholder="Enter Author"
+          id="Author"
+        />
+        <input
+          type="text"
+          spellcheck="false"
+          placeholder="Enter ISBN"
+          id="ISBN"
+        />
+        <input
+          type="text"
+          spellcheck="false"
+          placeholder="Enter Title"
+          id="Title"
+        />
+        <button>Generate QR Code</button>
+      </div>
+      <div class="qr-code">
+        <img src="" alt="qr-code" />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

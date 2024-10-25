@@ -1,0 +1,182 @@
+/* General Style */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Container */
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+/* Heading */
+.login-form h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.login-form input.text {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.login-form input.text:focus {
+  outline: none;
+  border-color: #74ebd5;
+}
+
+/* Show Password Checkbox */
+.show-password {
+  margin-top: 5px;
+}
+
+.label-show-password {
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.show-password:checked + .label-show-password span::after {
+  content: " (Password is visible)";
+}
+
+/* Submit Button */
+.login-form input[type="submit"] {
+  background: #74ebd5;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form input[type="submit"]:hover {
+  background: #6bd1c0;
+}
+
+/* Forgot Password */
+.email {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.email a {
+  color: #74ebd5;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.email a:hover {
+  color: #6bd1c0;
+}
+
+/* Illustration */
+figure {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.person-body,
+.neck,
+.head,
+.shirt-1,
+.shirt-2,
+.hair,
+.ears {
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.neck {
+  width: 40px;
+  height: 10px;
+  top: 40px;
+  left: 30px;
+}
+
+.head {
+  width: 60px;
+  height: 60px;
+  top: -10px;
+  left: 20px;
+  background-color: #f8b195;
+}
+
+.hair {
+  width: 40px;
+  height: 15px;
+  top: -10px;
+  left: 30px;
+  background-color: #333;
+}
+
+.ears {
+  width: 10px;
+  height: 10px;
+  top: 15px;
+  left: 0;
+}
+
+.shirt-1,
+.shirt-2 {
+  width: 100px;
+  height: 50px;
+  top: 100px;
+}
+
+.shirt-1 {
+  background-color: #74ebd5;
+}
+
+.shirt-2 {
+  top: 130px;
+  background-color: #6bd1c0;
+}
+
+.eyes,
+.mouth {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  top: 20px;
+  left: 15px;
+  border-radius: 50%;
+}
+
+.mouth {
+  width: 12px;
+  height: 6px;
+  background-color: #f67280;
+  border-radius: 20px;
+  top: 40px;
+  left: 25px;
+}

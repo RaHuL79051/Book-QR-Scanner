@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar h1,
+.navbar h2 {
+  margin: 0;
+  color: #fff;
+}
+
+#Menu {
+  cursor: pointer;
+}
+
+.Profile {
+  display: flex;
+  align-items: center;
+}
+
+.Profile i {
+  font-size: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#UserProfile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Main Section */
+.MainSection {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+/* Left Sidebar */
+.LeftSidebar {
+  width: 200px;
+  background-color: #444;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.LeftSidebar li {
+  list-style: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  width: 100%;
+  color: #fff;
+}
+
+.LeftSidebar li:hover,
+.LeftSidebar .Active {
+  background-color: #555;
+}
+
+.LeftSidebar .Attribute {
+  margin-top: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+/* Right Sidebar */
+.RightSidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.BooksTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.BooksTable th,
+.BooksTable td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.BooksTable th {
+  background-color: #f4f4f4;
+}
+
+.AcceptButton {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.AcceptButton:hover {
+  background-color: #218838;
+}
+
+/* User Profile Card */
+.UserProfileCard {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #fff;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.UserProfileCard li {
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+.UserProfileCard li:hover {
+  background-color: #f4f4f4;
+}
+
+/* Log Out Button */
+#LogOut {
+  color: #d9534f;
+}
+
+#LogOut:hover {
+  background-color: #f4f4f4;
+}
+
+.LeftSideOpen {
+  display: none;
+}
+
+.RightSideOpen {
+  width: 100%;
+}
+.ChangeUserProfileCard {
+  display: block;
+}
